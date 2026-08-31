@@ -2,12 +2,12 @@ import { Reveal } from '../components/Reveal'
 import { SectionHeading } from '../components/SectionHeading'
 
 const skills = [
-  ['Python (FastAPI, Django)', 90],
-  ['Generative AI & RAG', 85],
-  ['React JS', 90],
-  ['JavaScript / TypeScript', 88],
-  ['MERN Stack', 85],
-  ['HTML & CSS', 90],
+  ['Python', 85],
+  ['FastAPI & REST APIs', 80],
+  ['SQL & MySQL', 80],
+  ['HTML & CSS', 75],
+  ['NumPy, Pandas & Scikit-learn', 75],
+  ['Git, GitHub & Docker', 70],
 ]
 
 export function SkillsSection() {

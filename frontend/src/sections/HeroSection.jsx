@@ -1,15 +1,15 @@
 import { motion as Motion } from 'framer-motion'
 import { Reveal } from '../components/Reveal'
 import { TypingText } from '../components/TypingText'
-import portraitImage from '../assets/profile-photo.png'
+import portraitImage from './mahiphoto1.png'
 
 const softwareStack = [
   ['PY', 'Python'],
-  ['AI', 'Gen AI & RAG'],
-  ['RE', 'React'],
   ['FA', 'FastAPI'],
-  ['DJ', 'Django'],
-  ['JS', 'JavaScript'],
+  ['SQ', 'SQL'],
+  ['FA', 'FastAPI'],
+  ['MY', 'MySQL'],
+  ['DB', 'Databases'],
 ]
 
 export function HeroSection() {
@@ -18,16 +18,16 @@ export function HeroSection() {
       <div className="grid gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
         <div className="max-w-4xl pt-10 sm:pt-16">
           <Reveal>
-            <p className="text-lg font-semibold text-[#e27a1b] sm:text-xl">AI & Full-Stack Developer</p>
+            <p className="text-lg font-semibold text-[#e27a1b] sm:text-xl">Python Developer | B.Tech IT Graduate</p>
           </Reveal>
           <Reveal delay={0.05}>
             <h1 className="mt-5 text-[2.15rem] font-black leading-tight tracking-tight text-slate-950 transition-colors duration-300 dark:text-slate-50 sm:text-5xl lg:text-7xl">
-              Hi, I&apos;m Sourabh Joshi. An AI & Full-Stack Developer based in Indore, India.
+              Hi, I&apos;m Mahima Santore, a Python Developer and B.Tech IT graduate based in Indore, India.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
             <div className="mt-6 text-xl font-semibold text-slate-700 transition-colors duration-300 dark:text-slate-300 sm:text-2xl">
-              <TypingText phrases={['AI & RAG Specialist', 'Python Backend Engineer', 'Frontend React Developer']} />
+              <TypingText phrases={['Python Developer', 'FastAPI & REST API Developer', 'Backend Application Developer']} />
             </div>
           </Reveal>
 
@@ -61,7 +61,7 @@ export function HeroSection() {
               <div className="relative overflow-hidden rounded-[2.75rem] border border-white/70 bg-white p-3 shadow-[0_30px_90px_rgba(15,23,42,0.22)] ring-1 ring-black/5 transition-colors duration-300 dark:border-slate-800 dark:bg-[#0f172a] dark:ring-white/10">
                 <img
                   src={portraitImage}
-                  alt="Sourabh Joshi portrait"
+                  alt="Mahima Santore portrait"
                   className="h-[300px] w-full rounded-[2.25rem] object-cover object-top sm:h-[420px]"
                   fetchpriority="high"
                   decoding="async"
@@ -83,14 +83,13 @@ export function HeroSection() {
                 {[
                   'Python',
                   'FastAPI',
-                  'Django',
-                  'React',
-                  'Next.js',
-                  'Flutter',
-                  'Generative AI',
-                  'RAG Systems',
-                  'PostgreSQL',
-                  'Tailwind CSS',
+                  'REST APIs',
+                  'SQL',
+                  'MySQL',
+                  'Pydantic',
+                  'Database Management',
+                  'HTML & CSS',
+                  'Docker',
                 ].map((tech, index) => (
                   <Motion.span 
                     key={tech} 

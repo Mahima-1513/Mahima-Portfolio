@@ -4,36 +4,29 @@ import { SectionHeading } from '../components/SectionHeading'
 
 const projects = [
   {
-    name: 'Yogpratha',
-    type: 'Wellness Website',
-    summary: 'A modern platform dedicated to yoga practices and wellness, promoting healthy living.',
-    image: '/yogpratha.webp',
-    tags: ['Web', 'Health', 'UI'],
-    liveLink: 'https://www.yogpratha.com',
+    name: 'Better Call Bot',
+    type: 'AI Legal Assistant',
+    summary: 'An AI-powered legal assistant built with Python and Streamlit that supports conversational interaction with legal documents through document processing and semantic information retrieval.',
+    image: '/better-call-bot.png',
+    tags: ['Python', 'Streamlit', 'AI', 'Vector Search'],
+    liveLink: 'https://better-call-bot-z2xxog3cq2xq3pem7hskup.streamlit.app/',
   },
   {
-    name: 'Medicos Buddy',
-    type: 'Medical Study Platform',
-    summary: 'All-in-one medical exam companion with smart notes and previous year question papers for MBBS & BPT students.',
-    image: '/medicosebuddy.webp',
-    tags: ['EdTech', 'Healthcare', 'React'],
-    liveLink: 'https://medicosebuddy.online',
+    
+    name: 'IntervAIQ',
+    type: 'AI Interview & Skill Gap Analyzer',
+    summary: 'A Python-based application that analyzes resumes, identifies skill gaps, generates personalized interview questions, and evaluates responses using Groq AI.',
+    image: '/intervaiq.png',
+    tags: ['Python', 'FastAPI', 'REST APIs', 'Groq AI'],
+    liveLink: 'https://intervaiq-frontend.onrender.com/',
   },
   {
-    name: 'Internal Knowledge Assessment',
-    type: 'Enterprise System',
-    summary: 'A comprehensive system designed for internal team knowledge evaluation and tracking.',
-    image: '/assement.webp',
-    tags: ['Dashboard', 'Assessment', 'Enterprise'],
-    liveLink: null,
-  },
-  {
-    name: 'ClaimGuard AI',
-    type: 'AI System',
-    summary: 'Detects vehicle damage from photos, scores severity and estimates repair costs instantly using AI.',
-    image: '/claimguard.webp',
-    tags: ['AI', 'Insurance', 'Computer Vision'],
-    liveLink: 'https://tanstack-start-app.sourabhjoshi2906.workers.dev',
+    name: 'Attendance Management System',
+    type: 'Full-Stack Web Application',
+    summary: 'A classroom attendance platform with secure login, real-time attendance tracking, and centralized record management. The responsive frontend is deployed on Vercel, with a Render backend and MongoDB Atlas database.',
+    image: '/attendance-management-system.png',
+    tags: ['MongoDB', 'Full Stack', 'Vercel', 'Render'],
+    liveLink: 'https://attendance-system-flax-alpha.vercel.app/',
   },
 ]
 
@@ -43,8 +36,8 @@ export function ProjectsSection() {
       <Reveal>
         <SectionHeading
           eyebrow="Portfolio"
-          title="Each project is a unique piece of development"
-          description=""
+          title="Selected Projects"
+          description="A selection of practical applications that combine Python, AI, APIs, and full-stack development."
         />
       </Reveal>
 
@@ -123,3 +116,4 @@ export function ProjectsSection() {
     </section>
   )
 }
+

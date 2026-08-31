@@ -3,7 +3,6 @@ import { HeroSection } from './sections/HeroSection'
 import { AboutSection } from './sections/AboutSection'
 import { ServicesSection } from './sections/ServicesSection'
 import { ProjectsSection } from './sections/ProjectsSection'
-import { TestimonialsSection } from './sections/TestimonialsSection'
 import { ContactSection } from './sections/ContactSection'
 import { FooterSection } from './sections/FooterSection'
 
@@ -58,7 +57,7 @@ function App() {
             className="text-2xl font-bold tracking-wider text-[#e27a1b]"
             style={{ fontFamily: "'Dancing Script', cursive" }}
           >
-            Sourabh Joshi
+            Mahima Santore
           </a>
           <div className="flex items-center gap-3">
             <nav className="hidden items-center gap-8 text-[15px] font-medium text-slate-900 dark:text-slate-200 md:flex">
@@ -131,7 +130,6 @@ function App() {
         <AboutSection />
         <ServicesSection />
         <ProjectsSection />
-        <TestimonialsSection />
         <ContactSection />
       </main>
 

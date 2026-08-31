@@ -4,16 +4,16 @@ import { SectionHeading } from '../components/SectionHeading'
 
 const expertise = [
   {
-    category: 'Backend Architecture',
-    details: 'Building robust, scalable REST APIs and secure microservices using Python (FastAPI, Django) and complex database systems.',
+    category: 'Python & Backend Development',
+    details: 'Building reliable Python applications and REST APIs using FastAPI, Pydantic, SQL, and MySQL.',
   },
   {
-    category: 'Generative AI Solutions',
-    details: 'Developing custom intelligent chatbots, context-aware RAG pipelines, and integrating advanced LLMs directly into web applications.',
+    category: 'Database Management',
+    details: 'Designing and managing structured application data using SQL, MySQL, MongoDB, and effective data-handling practices.',
   },
   {
-    category: 'Modern Frontend UI',
-    details: 'Crafting responsive, high-performance, and beautiful user interfaces with React, Tailwind CSS, and Framer Motion.',
+    category: 'Data & Problem Solving',
+    details: 'Using Python libraries and strong DSA, OOP, DBMS, and operating system fundamentals to solve problems.',
   },
 ]
 
@@ -76,14 +76,14 @@ export function ServicesSection() {
           <Reveal>
             <SectionHeading
               eyebrow="Services"
-              title="End-to-End AI & Web Development Services"
-              description="I deliver comprehensive solutions ranging from custom generative AI applications and smart chatbots to robust, scalable full-stack web architectures."
+              title="Python, Backend & Web Development"
+              description="I build practical Python applications, REST APIs, and database-driven web solutions with a focus on clarity and usability."
             />
           </Reveal>
 
           <Reveal delay={0.05}>
             <p className="mt-6 max-w-2xl text-sm leading-8 text-slate-500 transition-colors duration-300 dark:text-slate-400 sm:text-base">
-              And also, I can provide you experts if you need support for a specific technology stack or product need.
+              I enjoy learning modern tools and turning problem statements into clean, useful applications.
             </p>
           </Reveal>
 

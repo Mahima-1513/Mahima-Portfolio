@@ -8,25 +8,29 @@ export function AboutSection() {
         <SectionHeading
           eyebrow="Introduction"
           title="About Me"
-          description="AI & Full-Stack Developer - I'm a passionate developer focused on building intelligent, scalable web applications that combine modern React frontends with powerful Python backends and Generative AI."
+          description="B.Tech Information Technology graduate and Python Developer focused on building practical, reliable, and user-friendly software solutions."
         />
       </Reveal>
 
       <div className="mt-12 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
         <Reveal delay={0.05} className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-colors duration-300 dark:border-slate-800 dark:bg-slate-900 sm:p-10">
           <p className="text-lg leading-8 text-slate-600 transition-colors duration-300 dark:text-slate-400">
-            I specialize in full-stack development with a strong focus on Python ecosystems like FastAPI and Django. My goal is to build seamless applications where robust backend logic meets intuitive frontend design using React.
+            I am a B.Tech Information Technology graduate with a strong foundation in Python, SQL, backend development, and REST APIs. I have hands-on experience building Python-based applications, developing APIs with FastAPI, and designing efficient database-driven solutions using MySQL and MongoDB.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-slate-600 transition-colors duration-300 dark:text-slate-400">
-            Recently, I have expanded my expertise into Generative AI, creating intelligent chatbots and implementing Retrieval-Augmented Generation (RAG) systems. I thrive on solving complex problems by integrating cutting-edge AI features into reliable web architectures.
+            I enjoy solving programming problems and turning requirements into clean, practical applications. I focus on writing maintainable code, creating secure backend functionality, managing data effectively, and building responsive interfaces that are easy to use.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-slate-600 transition-colors duration-300 dark:text-slate-400">
+            With knowledge of Git, GitHub, Docker, data structures, object-oriented programming, DBMS, and operating systems, I am continuously strengthening my development skills and looking for opportunities to contribute to meaningful software projects.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
-              ['Python & APIs', 'FastAPI, Django, and robust services'],
-              ['Gen AI & RAG', 'Smart chatbots and data retrieval systems'],
-              ['Frontend', 'Interactive UIs with React and JavaScript'],
+              ['Python & APIs', 'FastAPI, REST APIs, and Pydantic'],
+              ['Database Management', 'SQL, MySQL, MongoDB, and data handling'],
+              ['Web Development', 'Responsive interfaces with HTML and CSS'],
             ].map(([title, text]) => (
               <div key={title} className="rounded-3xl border border-slate-200 bg-[#fff9f2] p-5 transition-colors duration-300 dark:border-slate-700 dark:bg-slate-800">
                 <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[#e27a1b]">{title}</p>
@@ -40,10 +44,10 @@ export function AboutSection() {
           <p className="text-sm font-semibold uppercase tracking-[0.4em] text-slate-400 dark:text-slate-500">What I focus on</p>
           <div className="mt-6 space-y-4 text-slate-700 dark:text-slate-300">
             {[
-              'Building highly scalable backends with FastAPI and Django',
-              'Integrating Generative AI and RAG for smart applications',
-              'Crafting responsive and interactive frontends with React',
-              'Ensuring performance, security, and clean architecture',
+              'Building REST APIs and backend applications with Python and FastAPI',
+              'Designing secure and scalable backend functionality',
+              'Working with SQL, MySQL, and MongoDB databases',
+              'Writing clean, practical, and user-friendly applications',
             ].map((item) => (
               <div key={item} className="flex gap-3 rounded-3xl border border-white bg-white/90 p-4 shadow-sm transition-colors duration-300 dark:border-slate-700 dark:bg-slate-800">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-[#e27a1b]" />
