@@ -1,7 +1,7 @@
 import { motion as Motion } from 'framer-motion'
 import { Reveal } from '../components/Reveal'
 import { TypingText } from '../components/TypingText'
-import portraitImage from './mahiphoto1.png'
+import portraitImage from './kaju.photo.jpeg'
 
 const softwareStack = [
   ['PY', 'Python'],

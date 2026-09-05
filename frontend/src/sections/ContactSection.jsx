@@ -71,7 +71,7 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-24 sm:py-28">
+    <section id="contact" className="py-16 sm:py-24 lg:py-28">
       <Reveal>
         <SectionHeading
           eyebrow="Contact"
@@ -81,27 +81,27 @@ export function ContactSection() {
         />
       </Reveal>
 
-      <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:items-start">
-        <Reveal delay={0.05} className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-colors duration-300 dark:border-slate-800 dark:bg-slate-900 sm:p-10">
-          <h3 className="text-2xl font-black text-slate-950 transition-colors duration-300 dark:text-slate-50">Get in touch</h3>
+      <div className="mt-8 grid gap-6 lg:mt-12 lg:grid-cols-2 lg:items-start lg:gap-12">
+        <Reveal delay={0.05} className="min-w-0 rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-colors duration-300 dark:border-slate-800 dark:bg-slate-900 sm:rounded-4xl sm:p-8 lg:p-10">
+          <h3 className="text-xl font-black text-slate-950 transition-colors duration-300 dark:text-slate-50 sm:text-2xl">Get in touch</h3>
           <p className="mt-4 text-sm leading-7 text-slate-500 transition-colors duration-300 dark:text-slate-400">
             Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
           </p>
 
-          <div className="mt-8 space-y-6">
+          <div className="mt-7 space-y-5 sm:mt-8 sm:space-y-6">
             {contactItems.map((item) => (
-              <div key={item.title} className="flex items-center gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-slate-50 text-xl transition-colors duration-300 dark:bg-slate-800">
+              <div key={item.title} className="flex min-w-0 items-center gap-3 sm:gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-slate-50 text-xl transition-colors duration-300 dark:bg-slate-800 sm:h-12 sm:w-12">
                   {item.icon}
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">{item.title}</p>
                   {item.href ? (
-                    <a href={item.href} className="mt-1 block font-medium text-slate-950 transition-colors duration-300 hover:text-[#e27a1b] dark:text-slate-200 dark:hover:text-[#e27a1b]">
+                    <a href={item.href} className="mt-1 block break-words font-medium text-slate-950 transition-colors duration-300 hover:text-[#e27a1b] dark:text-slate-200 dark:hover:text-[#e27a1b]">
                       {item.value}
                     </a>
                   ) : (
-                    <p className="mt-1 font-medium text-slate-950 transition-colors duration-300 dark:text-slate-200">{item.value}</p>
+                    <p className="mt-1 break-words font-medium text-slate-950 transition-colors duration-300 dark:text-slate-200">{item.value}</p>
                   )}
                 </div>
               </div>
@@ -109,7 +109,7 @@ export function ContactSection() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1} className="rounded-4xl border border-slate-200 bg-white p-8 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-colors duration-300 dark:border-slate-800 dark:bg-slate-900 sm:p-10">
+        <Reveal delay={0.1} className="min-w-0 rounded-3xl border border-slate-200 bg-white p-5 shadow-[0_18px_60px_rgba(15,23,42,0.08)] transition-colors duration-300 dark:border-slate-800 dark:bg-slate-900 sm:rounded-4xl sm:p-8 lg:p-10">
           <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
             <div className="grid gap-6 sm:grid-cols-2">
               <div className="flex flex-col gap-2">
