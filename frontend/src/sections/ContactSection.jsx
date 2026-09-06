@@ -127,7 +127,7 @@ export function ContactSection() {
                   name="name"
                   required
                   placeholder="Your Name" 
-                  className="min-h-12 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
+                  className="min-h-12 w-full min-w-0 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -138,7 +138,7 @@ export function ContactSection() {
                   name="email"
                   required
                   placeholder="Your Email" 
-                  className="min-h-12 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
+                  className="min-h-12 w-full min-w-0 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
                 />
               </div>
             </div>
@@ -151,7 +151,7 @@ export function ContactSection() {
                 required
                 rows={4}
                 placeholder="How can I help you?" 
-                className="min-h-12 resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]"
+                className="min-h-12 w-full min-w-0 resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]"
               />
             </div>
 
