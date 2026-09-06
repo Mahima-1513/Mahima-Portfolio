@@ -90,18 +90,18 @@ export function ContactSection() {
 
           <div className="mt-7 space-y-5 sm:mt-8 sm:space-y-6">
             {contactItems.map((item) => (
-              <div key={item.title} className="flex min-w-0 items-center gap-3 sm:gap-4">
+              <div key={item.title} className="flex min-w-0 items-start gap-3 sm:items-center sm:gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-slate-50 text-xl transition-colors duration-300 dark:bg-slate-800 sm:h-12 sm:w-12">
                   {item.icon}
                 </div>
-                <div className="min-w-0">
+                <div className="min-w-0 flex-1">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">{item.title}</p>
                   {item.href ? (
-                    <a href={item.href} className="mt-1 block break-words font-medium text-slate-950 transition-colors duration-300 hover:text-[#e27a1b] dark:text-slate-200 dark:hover:text-[#e27a1b]">
+                    <a href={item.href} className="mt-1 block break-all text-sm font-medium text-slate-950 transition-colors duration-300 hover:text-[#e27a1b] dark:text-slate-200 dark:hover:text-[#e27a1b] sm:break-words sm:text-base">
                       {item.value}
                     </a>
                   ) : (
-                    <p className="mt-1 break-words font-medium text-slate-950 transition-colors duration-300 dark:text-slate-200">{item.value}</p>
+                    <p className="mt-1 break-words text-sm font-medium text-slate-950 transition-colors duration-300 dark:text-slate-200 sm:text-base">{item.value}</p>
                   )}
                 </div>
               </div>
@@ -120,7 +120,7 @@ export function ContactSection() {
                   name="name"
                   required
                   placeholder="Your Name" 
-                  className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
+                  className="min-h-12 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
                 />
               </div>
               <div className="flex flex-col gap-2">
@@ -131,7 +131,7 @@ export function ContactSection() {
                   name="email"
                   required
                   placeholder="Your Email" 
-                  className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
+                  className="min-h-12 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]" 
                 />
               </div>
             </div>
@@ -144,14 +144,14 @@ export function ContactSection() {
                 required
                 rows={4}
                 placeholder="How can I help you?" 
-                className="resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]"
+                className="min-h-12 resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-base outline-none transition focus:border-[#e27a1b] focus:ring-1 focus:ring-[#e27a1b] dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:focus:border-[#e27a1b]"
               />
             </div>
 
             <button 
               type="submit" 
               disabled={isSubmitting}
-              className="mt-2 w-full rounded-2xl bg-[#e27a1b] px-8 py-4 text-sm font-semibold text-white shadow-sm transition hover:bg-[#d86f15] hover:shadow-md active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
+              className="mt-2 min-h-12 w-full rounded-2xl bg-[#e27a1b] px-8 py-4 text-base font-semibold text-white shadow-sm transition hover:bg-[#d86f15] hover:shadow-md active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70"
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}
             </button>
