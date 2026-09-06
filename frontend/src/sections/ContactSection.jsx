@@ -6,6 +6,8 @@ const contactItems = [
   {
     title: 'Location',
     value: 'Indore, Madhya Pradesh, India',
+    href: 'https://www.google.com/maps/search/?api=1&query=Indore%2C%20Madhya%20Pradesh%2C%20India',
+    external: true,
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6 stroke-[#e27a1b]" strokeWidth="1.8">
         <path d="M12 21s6-5.6 6-11a6 6 0 1 0-12 0c0 5.4 6 11 6 11Z" />
@@ -97,7 +99,12 @@ export function ContactSection() {
                 <div className="min-w-0 flex-1">
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">{item.title}</p>
                   {item.href ? (
-                    <a href={item.href} className="mt-1 block break-all text-sm font-medium text-slate-950 transition-colors duration-300 hover:text-[#e27a1b] dark:text-slate-200 dark:hover:text-[#e27a1b] sm:break-words sm:text-base">
+                    <a
+                      href={item.href}
+                      target={item.external ? '_blank' : undefined}
+                      rel={item.external ? 'noreferrer' : undefined}
+                      className="mt-1 block break-all text-sm font-medium text-slate-950 transition-colors duration-300 hover:text-[#e27a1b] dark:text-slate-200 dark:hover:text-[#e27a1b] sm:break-words sm:text-base"
+                    >
                       {item.value}
                     </a>
                   ) : (
