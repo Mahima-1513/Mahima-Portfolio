@@ -5,11 +5,11 @@ import { SectionHeading } from '../components/SectionHeading'
 const projects = [
   {
     name: 'Better Call Bot',
-    type: 'AI Legal Assistant',
-    summary: 'An AI-powered legal assistant built with Python and Streamlit that supports conversational interaction with legal documents through document processing and semantic information retrieval.',
+    type: 'AI-Powered Indian Legal Assistant',
+    summary: 'Better Call Bot is an AI-powered legal assistant that helps users understand Indian legal information in simple language. It answers legal questions, provides practical guidance, and summarizes uploaded PDFs using Python, FastAPI, Groq, LangChain, and FAISS.',
     image: '/better-call-bot.png',
-    tags: ['Python', 'Streamlit', 'AI', 'Vector Search'],
-    liveLink: 'https://better-call-bot-z2xxog3cq2xq3pem7hskup.streamlit.app/',
+    tags: ['Python', 'FastAPI', 'Groq', 'LangChain', 'FAISS'],
+    liveLink: 'https://better-call-bot.vercel.app/',
   },
   {
     
